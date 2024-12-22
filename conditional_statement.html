@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions to Programming Problems</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2b2b2b;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        header {
+            background: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        .problem {
+            margin-bottom: 20px;
+        }
+        .problem h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .code {
+            background: #1e1e1e;
+            color: #00ff99;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solutions to Programming Problems</h1>
+    </header>
+    <div class="container">
+        <div class="problem">
+            <h2>Simple Practice Problem</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if(age < 12)
+    {
+        printf("You are a child");
+    }
+    else if(age >= 13 && age <= 19)
+    {
+        printf("You are a teenager");
+    }
+    else
+    {
+        printf("You are an adult");
+    }
+}</pre>
+        </div>
+        <div class="problem">
+            <h2>Intermediate Problem 1</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    int input;
+    printf("Enter the number: ");
+    scanf("%d", &input);
+
+    if(input < 0)
+    {
+        printf("Negative");
+    }
+    else if(input > 0)
+    {
+        printf("Positive");
+    }
+    else
+    {
+        printf("Zero");
+    }
+}</pre>
+        </div>
+        <div class="problem">
+            <h2>Intermediate Problem 2</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    int num1, num2, num3;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+    printf("Enter the third number: ");
+    scanf("%d", &num3);
+
+    if(num1 > num2 && num1 > num3)
+    {
+        printf("%d is the largest number.", num1);
+    }
+    else if(num2 > num3)
+    {
+        printf("%d is the largest number.", num2);
+    }
+    else
+    {
+        printf("%d is the largest number.", num3);
+    }
+}</pre>
+        </div>
+        <div class="problem">
+            <h2>Intermediate Problem 3</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    int year;
+    printf("Enter the year: ");
+    scanf("%d", &year);
+
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+    {
+        printf("This year is a leap year");
+    }
+    else
+    {
+        printf("This year is not a leap year");
+    }
+}</pre>
+        </div>
+        <div class="problem">
+            <h2>Intermediate Problem 4</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    char input;
+    printf("Enter the character you want to take input: ");
+    scanf(" %c", &input);
+
+    if(input == 'a' || input == 'A' || input == 'e' || input == 'E' || input == 'i' || input == 'I' || input == 'o' || input == 'O' || input == 'u' || input == 'U')
+    {
+        printf("This character is a vowel");
+    }
+    else
+    {
+        printf("This character is a consonant");
+    }
+}</pre>
+        </div>
+        <div class="problem">
+            <h2>Advanced Problem 1</h2>
+            <pre class="code">#include&lt;stdio.h&gt;
+int main()
+{
+    int input;
+    scanf("%d", &input);
+    if(input > 2 && input <= 100 && input % 2 == 0)
+    {
+        printf("YES");
+    }
+    else
+    {
+        printf("NO");
+    }
+}</pre>
+        </div>
+    </div>
+</body>
+</html>
